@@ -14,6 +14,9 @@
 		8FD0FE842B0277090046AA6F /* WeatherAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD0FE832B0277090046AA6F /* WeatherAppTests.swift */; };
 		8FD0FE8E2B0277090046AA6F /* WeatherAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD0FE8D2B0277090046AA6F /* WeatherAppUITests.swift */; };
 		8FD0FE902B0277090046AA6F /* WeatherAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD0FE8F2B0277090046AA6F /* WeatherAppUITestsLaunchTests.swift */; };
+		8FD0FEA12B0285CA0046AA6F /* GetWeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD0FEA02B0285CA0046AA6F /* GetWeatherViewModel.swift */; };
+		8FD0FEA32B0289410046AA6F /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD0FEA22B0289410046AA6F /* AppConfig.swift */; };
+		8FD0FEA52B03F7DE0046AA6F /* DayOfWeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD0FEA42B03F7DE0046AA6F /* DayOfWeekView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		8FD0FE892B0277090046AA6F /* WeatherAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FD0FE8D2B0277090046AA6F /* WeatherAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAppUITests.swift; sourceTree = "<group>"; };
 		8FD0FE8F2B0277090046AA6F /* WeatherAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8FD0FEA02B0285CA0046AA6F /* GetWeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetWeatherViewModel.swift; sourceTree = "<group>"; };
+		8FD0FEA22B0289410046AA6F /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		8FD0FEA42B03F7DE0046AA6F /* DayOfWeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayOfWeekView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +100,13 @@
 		8FD0FE712B0277070046AA6F /* WeatherApp */ = {
 			isa = PBXGroup;
 			children = (
-				8FD0FE722B0277070046AA6F /* WeatherAppApp.swift */,
-				8FD0FE742B0277070046AA6F /* ContentView.swift */,
+				8FD0FE9F2B0285AF0046AA6F /* View */,
+				8FD0FE9E2B0285AA0046AA6F /* ViewModel */,
+				8FD0FE9D2B0285A10046AA6F /* Model */,
+				8FD0FE9C2B0285660046AA6F /* App */,
 				8FD0FE762B0277090046AA6F /* Assets.xcassets */,
 				8FD0FE782B0277090046AA6F /* Preview Content */,
+				8FD0FEA22B0289410046AA6F /* AppConfig.swift */,
 			);
 			path = WeatherApp;
 			sourceTree = "<group>";
@@ -125,6 +134,38 @@
 				8FD0FE8F2B0277090046AA6F /* WeatherAppUITestsLaunchTests.swift */,
 			);
 			path = WeatherAppUITests;
+			sourceTree = "<group>";
+		};
+		8FD0FE9C2B0285660046AA6F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				8FD0FE722B0277070046AA6F /* WeatherAppApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		8FD0FE9D2B0285A10046AA6F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8FD0FE9E2B0285AA0046AA6F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8FD0FEA02B0285CA0046AA6F /* GetWeatherViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8FD0FE9F2B0285AF0046AA6F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8FD0FE742B0277070046AA6F /* ContentView.swift */,
+				8FD0FEA42B03F7DE0046AA6F /* DayOfWeekView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +299,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FD0FE752B0277070046AA6F /* ContentView.swift in Sources */,
+				8FD0FEA32B0289410046AA6F /* AppConfig.swift in Sources */,
+				8FD0FEA12B0285CA0046AA6F /* GetWeatherViewModel.swift in Sources */,
+				8FD0FEA52B03F7DE0046AA6F /* DayOfWeekView.swift in Sources */,
 				8FD0FE732B0277070046AA6F /* WeatherAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
