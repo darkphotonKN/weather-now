@@ -18,6 +18,8 @@ struct ContentView: View {
 
             // Main Content Area
             VStack {
+
+                
                 
                 // title
                 Text("San Franciso, CA")
@@ -26,8 +28,7 @@ struct ContentView: View {
                     .padding([.top, .bottom], 30)
                 
                 
-                // weather symbol & weather
-                WeatherNowView(isNight: $isNight)
+                WeatherNowView(isNight: isNight)
                 
                 
                 // upcoming weather
@@ -68,6 +69,8 @@ struct ContentView: View {
             
                 
         }
+        // Primary Navigation
+        MainMenuView()
     }
 }
 

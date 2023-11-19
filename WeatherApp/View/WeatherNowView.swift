@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct WeatherNowView: View {
-    @Binding var isNight: Bool;
+    var isNight: Bool;
     
     var body: some View {
         VStack(spacing: 8) {
             Image(systemName: isNight ? "moon.fill" : "sun.min.fill")
-                //.renderingMode(.original) // what is this for?
+                .symbolRenderingMode(.multicolor)
                 .resizable()
                 .foregroundStyle(.yellow)
                 .frame(width: 130, height: 130)
